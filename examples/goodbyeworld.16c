@@ -1,0 +1,25 @@
+# This is fairly comprehensive source file
+# that the 16c compiler should be able to read
+# and produce output that should run under the VM
+# where it should print 'goodbye world'.
+
+= 0x45 r0     # get kinky
++ r0 2 r1
+
+write r1   # g
+write 0x6F # o
+write 111  # o
+write 100  # d
+write 98   # b
+write 121  # y
+write 101  # e
+
+write 0x20 # {space}
+
+write 119 # w
+write 111 # o
+write 114 # r
+write 108 # l
+write 100 # d
+
+write 10  # \n

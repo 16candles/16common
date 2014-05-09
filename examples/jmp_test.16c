@@ -1,0 +1,8 @@
+= 0 r1
+= 1 r2
+
+@test
+
+write 43
+
+jmp test

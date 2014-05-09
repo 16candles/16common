@@ -1,0 +1,11 @@
+# Joe Jevnik
+# 2014.3.6
+# cat program in 16c.
+
+# loop start
+@top
+
+read  r0_f # read a char from stdin, or 0 if none are present.
+write r0_f # write the char back out.
+
+jmpt top # Edgar Dijkstra forgive me ;_;

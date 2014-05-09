@@ -1,0 +1,4 @@
+set 100 r2
+mset 50 *r2
+mset *100 r2
+write r2

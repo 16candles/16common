@@ -1,0 +1,35 @@
+: ipt
+jmp enqueue
+write r0
+jmp dequeue
+write r0
+
+@enqueue
+== inp r9
+jmpt roll
+
+$ r6
+:= r6 *inp
+++ inp inp
+$ r6
+= r6 inp
+
+@roll
+= inp r8
+$ r6
+:= r6 *inp
+$ r6
+= r6 ipt
+
+@dequeue
+== inp r7
+jmpt zero
+
+:= *r7 r0
+$ r6
+= r6 ipt
+
+@zero
+= 0 r0
+$ r6
+= r6 ipt

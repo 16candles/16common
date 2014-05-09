@@ -1,0 +1,4 @@
+: 43
+$ r0
+write r0
+flush
