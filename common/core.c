@@ -15,7 +15,7 @@
    this program; if not, write to the Free Software Foundation, Inc., 51
    Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA. */
 
-#include "core.c"
+#include "core.h"
 
 // return: true iff this word is a subreg opcode.
 bool is_subreg(c16_word op){
@@ -38,6 +38,6 @@ bool is_un_op(c16_word op){
 }
 
 // return: true iff this opcode is a jump operator.
-bool is_jmp_op(c16_word){
-    return !is_un_op(op) && ((op >> 1) << 1 != OP_PUSH) && op <= OP_JMPF;
+bool is_jmp_op(c16_word op){
+    return !is_un_op(op) && ((op >> 1) << 1 != OP_PUSH_) && op <= OP_JMPF;
 }
